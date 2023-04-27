@@ -1,14 +1,102 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
 
 namespace OOP_A2___LinCode_Math_Tutorial_Program
 {
-    internal class Pack
+    public class Pack
     {
         
+        public int NumberGeneratorOne()
+        {
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Random random = new Random();
+
+            for (int i = array.Length - 1; i > 0; i--)
+            {
+                int j = random.Next(i + 1);
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+
+            int randomNumber = array[0];
+            return randomNumber;
+
+
+        }
+
+        public int NumberGeneratorTwo()
+        {
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Random random = new Random();
+
+            for (int i = array.Length - 1; i > 0; i--)
+            {
+                int j = random.Next(i + 1);
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+
+            int randomNumber = array[1];
+            return randomNumber;
+
+        }
+        public int NumberGeneratorThree()
+        {
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Random random = new Random();
+
+            for (int i = array.Length - 1; i > 0; i--)
+            {
+                int j = random.Next(i + 1);
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+
+            int randomNumber = array[2];
+            return randomNumber;
+
+        }
+
+        public string OperationGeneratorOne()
+        {
+            string[] array = { "+", "-", "/", "*" };
+            Random random = new Random();
+
+            for (int i = array.Length - 1; i > 0; i--)
+                {
+                    int j = random.Next(i + 1);
+                    string temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            
+            string randomOperation = array[0];
+            return randomOperation;
+
+        }
+        public string OperationGeneratorTwo()
+        {
+            string[] array = { "+", "-", "/", "*" };
+            Random random = new Random();
+
+            for (int i = array.Length - 1; i > 0; i--)
+            {
+                int j = random.Next(i + 1);
+                string temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+
+            string randomOperation = array[1];
+            return randomOperation;
+
+        }
+
     }
 }
