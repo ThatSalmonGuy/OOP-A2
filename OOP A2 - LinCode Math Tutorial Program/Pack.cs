@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
@@ -11,7 +12,7 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
         
         public int NumberGeneratorOne()
         {
-            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
             Random random = new Random();
 
             for (int i = array.Length - 1; i > 0; i--)
@@ -23,6 +24,7 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
             }
 
             int randomNumber = array[0];
+            //Console.WriteLine(randomNumber); // used for testing
             return randomNumber;
 
 
@@ -30,7 +32,7 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
 
         public int NumberGeneratorTwo()
         {
-            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
             Random random = new Random();
 
             for (int i = array.Length - 1; i > 0; i--)
@@ -42,12 +44,14 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
             }
 
             int randomNumber = array[1];
+            //Console.WriteLine(randomNumber); // used for testing
             return randomNumber;
 
         }
-        public int NumberGeneratorThree()
+
+        /*public int NumberGeneratorThree()
         {
-            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
             Random random = new Random();
 
             for (int i = array.Length - 1; i > 0; i--)
@@ -61,7 +65,7 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
             int randomNumber = array[2];
             return randomNumber;
 
-        }
+        }*/
 
         public string OperationGeneratorOne()
         {
@@ -77,10 +81,12 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
                 }
             
             string randomOperation = array[0];
+            //Console.WriteLine(randomOperation); // used for testing
             return randomOperation;
 
         }
-        public string OperationGeneratorTwo()
+
+        /*public string OperationGeneratorTwo()
         {
             string[] array = { "+", "-", "/", "*" };
             Random random = new Random();
@@ -96,7 +102,7 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
             string randomOperation = array[1];
             return randomOperation;
 
-        }
+        }*/
 
     }
 }
