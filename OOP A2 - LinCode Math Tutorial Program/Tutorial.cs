@@ -25,7 +25,7 @@ namespace OOP_A2___LinCode_Math_Tutorial_Program
                 Console.WriteLine("Once you do this, one of two things will happen. The application will either tell you that you got the answer correct");
                 Console.WriteLine("or wrong.");
                 Console.WriteLine("");
-                Console.WriteLine("Don't be dishearted if you get a few wrong to begin with! Maths can be tricky!");
+                Console.WriteLine("Don't be disheartened if you get a few wrong to begin with! Maths can be tricky!");
                 Console.WriteLine("");
                 Console.WriteLine("Once you know whether you've got the answer correct or not, the computer will present you with two options.");
                 Console.WriteLine("The 1st option you'll have is to generate a brand new randomly generated Maths question to try out your Maths skills on!");
